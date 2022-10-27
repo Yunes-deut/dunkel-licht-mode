@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.container.active {
+  background-color: black;
+}
+.item {
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  box-shadow: inset -3px -3px 8px rgb(183, 179, 179);
+  position: relative;
+}
+
+.mode {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: -3px -3px 3px rgb(154, 152, 152);
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.mode.active {
+  left: 50%;
+  background-color: black;
+}
+.circle {
+  font-size: 28px;
+}
+.circle :nth-child(1) {
+  color: gold;
+}
+.circle :nth-child(2) {
+  color: white;
+}
+.circle i.active {
+  display: none;
+}
